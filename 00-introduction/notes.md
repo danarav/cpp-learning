@@ -1,5 +1,7 @@
 # Introduction
 
+--- 
+
 ### Programs and Programming Languages
 
 A **computer program** is a sequence of instructions that directs a computer to perform certain actions in a specified order.
@@ -49,3 +51,29 @@ A program that is designed to run on multiple platforms is said to be **cross-pl
 
 Programs written in a high-level language are easier to read, write, and learn because their instructions more closely resemble the natural language and mathematics that we use every day.
 
+---
+
+### Introduction to C/C++
+
+C was developed in 1972 by Dennis Ritchie at Bell Telephone laboratories.
+
+C++ was developed by Bjarne Stroustrup at Bell Labs as an extension to C, starting in 1979.
+
+C++'s most notable innovation over C is that it supports object-oriented programming.
+
+Standardized in 1998 by the ISO committee. 
+The goal of standardization is to help ensure that C++ code behaves consistently across different compilers and platforms.
+
+**What is C++ good at?**
+
+C++ excels in situations where high performance and precise control over memory and other resources is needed.
+
+A few types of applications that C++ would excel in:
+- Video Games
+- Real-time systems
+- High-performance financial applications
+- Graphical applications and simulations
+- Productivity / office applications
+- Embedded software
+- Audio and video processing
+- Artificial intelligence and neural networks
