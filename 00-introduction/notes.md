@@ -163,3 +163,30 @@ Basic testing typically involves trying different input combinations to ensure t
 
 If the program does not behave as expected, then you will have to do some **debugging**, which is the process of finding and fixing programming errors.
 
+---
+
+### Compiling Your First Program
+
+Create a new project in your IDE
+
+Hello World
+
+```C++
+#include <iostream>
+
+int main()
+{
+	std::cout << "Hello, world!";
+	return 0;
+}
+```
+
+A **console project** means that we are going to create programs that can be run from the console.
+
+What is the difference between the compile, build, rebuild, clean, and run/start options in my IDE?
+
+- **Build** compiles all *modified* code files in the project, and then links the object files into an executable produced.
+- **Clean** removes all cached objects and executables so the next time the project is built, all files will be recompiled and a new executable produced.
+- **Rebuild** does a "clean", followed by a "build".
+- **Compile** recompiles a single code file. This option does not invoke the linker or produce an executable.
+- **Run/start** executes the executable from a prior build.
