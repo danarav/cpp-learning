@@ -190,3 +190,27 @@ What is the difference between the compile, build, rebuild, clean, and run/start
 - **Rebuild** does a "clean", followed by a "build".
 - **Compile** recompiles a single code file. This option does not invoke the linker or produce an executable.
 - **Run/start** executes the executable from a prior build.
+
+---
+
+### Build Configurations
+
+A **build configuration** is a collection of project settings that determines how your IDE will build your project.
+
+Typically includes things like:
+- What the executable will be named
+- what directories the IDE will look in for other code and library files
+- whether to keep or strip out debugging information
+- how much to have the compiler optimize your program
+- and more
+
+When you create a new project in your IDE, most IDEs will set up two different build configurations:
+1. a release configuration
+2. a debug configuration
+
+A **debug configuration** is designed to help you debug your program and generally the one you use when writing your programs.
+
+The **release configuration** is designed to be used when releasing your program to the public.
+
+Best Practice: Use the *debug* build when developing your programs.
+When you're ready to release your executables to others, or want to test performance, use the *release* build configuration.
