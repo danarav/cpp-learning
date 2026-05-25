@@ -214,3 +214,19 @@ The **release configuration** is designed to be used when releasing your program
 
 Best Practice: Use the *debug* build when developing your programs.
 When you're ready to release your executables to others, or want to test performance, use the *release* build configuration.
+
+### Compiler Extensions
+
+The C++ standard defines rules about how programs should behave in specific circumstances. 
+In most cases, compilers will follow these rules.
+However, some compilers will implement their own changes to the language, often to enhance compatibility with other versions of the language.
+These compiler-specific behaviors are called **compiler extensions**.
+
+Writing a program that makes use of a compiler extension allows you to write programs that are incompatible with the C++ standard.
+Programs using non-standard extensions will not compile on other compilers, or may not run correctly.
+
+Compiler extensions are often enabled by default.
+Because compiler extensions are never necessary, and cause your programs to be non-compliant with C++ standards, it is recommended to turn them off.
+
+Best Practice: Disable compiler extensions to ensure your programs remain compliant with C++ standards and will work on any system.
+
