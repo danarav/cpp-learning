@@ -139,6 +139,54 @@ Multi-line style comments can not be nested. For example, the following would ha
 **Warning:** Do not use multi-line comments inside other multi-line comments.
 Wrapping single-line comments inside a multi-line comment is okay.
 
+Comments should be used for three things in accord with a given library, program, or function:
+1. to describe *what* it does
+```c++
+// This program calculates the student's final grade based on their test and homework scores.
+```
+```c++
+// This function uses Newton's method to approximate the root of a given equation.
+```
+```c++
+// The following lines generate a random item based on rarity, level, and a weight factor.
+```
+
+2. to describe *how* it will accomplish its goal
+```c++
+/* To calculate the final grade, we sum all the weighted midterm and homework scores
+and then divide by the number of scores to assign a percentage, which is
+used to calculate a letter grade. */
+```
+```c++
+// To generate a random item, we're going to do the following:
+// 1) Put all of the items of the desired rarity on a list
+// 2) Calculate a probability for each item based on level and weight factor
+// 3) Choose a random number
+// 4) Figure out which item that random number corresponds to
+// 5) Return the appropriate item
+```
+
+3. to describe *why* it is doing something
+
+```c++
+// The player just drank a potion of blindness and can not see anything
+sight = 0;
+```
+```c++
+// We need to multiply quantity by 2 here because they are bought in pairs
+cost = quantity * 2 * storePrice;
+```
+```c++
+// We decided to use a linked list instead of an array because
+// arrays do insertion too slowly.
+```
+
+**Best practice:** Comment your code liberally, and write your comments as if speaking to someone who has no idea what the code does.
+Don't assume you'll remember why you made specific choices.
+
+Converting one or more lines of code into a comment is called **commenting out** your code.
+This provides a convenient way to temporarily exclude parts of your code from being included in your compiled program.
+
 ---
 
 ### Introduction to Objects and Variables
