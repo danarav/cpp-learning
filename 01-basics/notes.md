@@ -77,10 +77,67 @@ For example, most statements are required to end in a ```;```.
 If we omit the semicolon in our Hello World program then we would get a compilation error similar to this:
 ```prog.cc:5:31: error: expected ';' after expression```.
 
-
 ---
 
 ### Comments
+
+A **comment** is a programmer-readable note that is inserted directly into the source code of a program.
+Comments are ignored by the compiler.
+
+In C++, there are two different styles of comments:
+
+**Single-line comments**
+
+The ```//``` symbol begins a C++ single-line comment.
+This tells the compiler to ignore everything from the ```//``` to the end of the line.
+
+```C++
+std::cout << "Hello world!"; // Everything from here to the end of the line is ignored
+```
+
+Typically, the single-line comment is used to make a quick comment about a single line of code.
+Single-line comments are often placed above the line it is commenting:
+
+```c++
+// std::cout lives in the iostream library
+std::cout << "Hello world!\n";
+
+// this is much easier to read
+std::cout << "It is very nice to meet you!\n";
+
+// don't you think so?
+std::cout << "Yeah!\n";
+```
+
+**Multi-line comments**
+
+The ```/*``` and ```*/``` pair of symbols denotes a C-style multi-line comment.
+Everything in between the symbols is ignored.
+
+```c++
+/* This is a multi-line comment.
+   This line will be ignored.
+   So will this one. */
+```
+
+Often programmers will "beautify" their multi-line comments like so:
+
+```c++
+/* This is a multi-line comment.
+ * the matching asterisks to the left
+ * can make this easier to read
+ */
+```
+
+Multi-line style comments can not be nested. For example, the following would have unexpected results:
+
+```c++
+/* This is a multi-line /* comment */ this is not inside the comment */
+// The above comment ends at the first */, not the second */
+```
+
+**Warning:** Do not use multi-line comments inside other multi-line comments.
+Wrapping single-line comments inside a multi-line comment is okay.
 
 ---
 
