@@ -191,6 +191,88 @@ This provides a convenient way to temporarily exclude parts of your code from be
 
 ### Introduction to Objects and Variables
 
+In computing, **data** is any information that can be moved, processed, or stored by a computer.
+
+A program can acquire data to work with many ways:
+- from a file
+- from a database
+- over a network
+- from the user providing input on a keyboard
+- from the programmer putting data directly into the source code of the program itself
+
+A single piece of data is called a **value**.
+
+Examples include:
+- Numbers
+- Characters
+- Text
+
+**Random Access Memory**
+
+The main memory in a computer is called **Random Access Memory**. When we run a program, 
+the operating system loads the program into RAM. Any data that is hardcoded into the program itself is loaded at this point.
+
+The operating system also reserves some additional RAM for the program to use while it is running.
+Common uses for this memory are to store values entered by the user, to store data read in from a file or network,
+or to store values calculated while the program is running so they can be used again later.
+
+You can think of RAM as a series of numbered boxes that can be used to store data while the program is running.
+
+**Objects and Variables**
+
+In C++, we access memory indirectly through an object. An **object** represents a region of storage (typically RAM or a CPU register)
+that can hold a value.
+
+Rather than say "go get the value stored in mailbox number 7532", we can say,
+"go get the value stored by this object" and let the compiler figure out where and how to retrieve the value.
+
+Objects in C++ can be unnamed but more often we name our objects using an identifier.
+An object with a name is called a **variable**.
+
+A **definition** statement can be used to tell the compiler that we want to use a variable in our program.
+
+An example of defining a variable:
+
+```c++
+// define a variable named x (of type int)
+int x; 
+```
+
+At **compile time** (when the program is being compiled), when encountering this statement, 
+the compiler makes a note to itself that we want a variable with the name ```x```, and that the variable
+has the data type ```int```. From that point forward whenever we use the identifier ```x``` in our code,
+the compiler will know that we are referring to this variable.
+
+At **runtime** (when the program is loaded into memory and run), each object is given an actual storage location
+(such as RAM, or a CPU register) that it can use to store values. The process of reserving storage for an object's
+use is called **allocation**. Once allocation has occurred, the object has been created and can be used.
+
+**Data Types**
+
+A **data type** determines what kind of value (number, letter, text, etc...) the object will store.
+
+In C++, the type of an object must be known at compile-time. 
+That type can not be changed without recompiling the program.
+
+**Defining Multiple Variables**
+
+It is possible to define multiple variables of the same type in a single statement by separating
+the names with a comma. The following code snippet:
+
+```c++
+int a;
+int b;
+```
+
+is effectively the same as this one:
+
+```c++
+int a, b;
+```
+
+**Best Practice:** Avoid defining multiple variables of the same type in a single statement.
+Instead, define each variable in a separate statement on its own line. 
+
 ---
 
 ### Variable Assignment and Initialization
